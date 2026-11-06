@@ -1,0 +1,13 @@
+﻿# Large image/output folders
+**/herniation/
+**/outlines/
+**/prediction_4cls/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/

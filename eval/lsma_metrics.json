@@ -1,0 +1,88 @@
+{
+  "num_images": 3089,
+  "num_pixels_evaluated": 202440704,
+  "pixel_accuracy": 0.9863811034761073,
+  "foreground_macro_precision": 0.7306035110992393,
+  "foreground_macro_f1": 0.8041907217009735,
+  "per_class": {
+    "Background": {
+      "precision": 0.9979461833264691,
+      "recall": 0.9884538448459399,
+      "f1": 0.9931773337376969,
+      "tp": 189763723,
+      "fp": 390542,
+      "fn": 2216635
+    },
+    "PE": {
+      "precision": 0.6636468069128115,
+      "recall": 0.9478856520454269,
+      "f1": 0.7806994923391952,
+      "tp": 2857916,
+      "fp": 1448465,
+      "fn": 157127
+    },
+    "CC": {
+      "precision": 0.6158993095418165,
+      "recall": 0.8000462937604139,
+      "f1": 0.6959984321139945,
+      "tp": 452787,
+      "fp": 282377,
+      "fn": 113164
+    },
+    "IVD": {
+      "precision": 0.9122644168430898,
+      "recall": 0.9607385986354529,
+      "f1": 0.935874240649731,
+      "tp": 6609259,
+      "fp": 635635,
+      "fn": 270093
+    }
+  },
+  "overlapping_annotation_pixels_before_resize": 0,
+  "confusion_matrix": [
+    [
+      189763723,
+      1366593,
+      234922,
+      615120
+    ],
+    [
+      121587,
+      2857916,
+      34289,
+      1251
+    ],
+    [
+      13340,
+      80560,
+      452787,
+      19264
+    ],
+    [
+      255615,
+      1312,
+      13166,
+      6609259
+    ]
+  ],
+  "confusion_matrix_note": "Rows=true class, columns=predicted class",
+  "model": "LeNetUNet",
+  "checkpoint": "D:\\test\\src\\cnn_segmentation\\models\\checkpoints_4cls\\lenet_unet_best.pt",
+  "input_size": [
+    256,
+    256
+  ],
+  "device": "cuda",
+  "class_names": [
+    "Background",
+    "PE",
+    "CC",
+    "IVD"
+  ],
+  "lsma_to_model_class_mapping": {
+    "0": "IVD",
+    "1": "PE",
+    "2": "CC"
+  },
+  "overlap_policy": "CC overrides PE, PE overrides IVD"
+}

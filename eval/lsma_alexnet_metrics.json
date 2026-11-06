@@ -1,0 +1,81 @@
+{
+  "num_images": 3089,
+  "num_pixels_evaluated": 202440704,
+  "pixel_accuracy": 0.9863361224035261,
+  "foreground_macro_precision": 0.7296776978072366,
+  "foreground_macro_f1": 0.8128539978098845,
+  "per_class": {
+    "Background": {
+      "precision": 0.998199471305014,
+      "recall": 0.9879532988473748,
+      "f1": 0.9930499560794904,
+      "tp": 189667628,
+      "fp": 342118,
+      "fn": 2312730
+    },
+    "PE": {
+      "precision": 0.6690202723906358,
+      "recall": 0.9545684754744791,
+      "f1": 0.786684019973888,
+      "tp": 2878065,
+      "fp": 1423845,
+      "fn": 136978
+    },
+    "CC": {
+      "precision": 0.614687098961997,
+      "recall": 0.8615639869882729,
+      "f1": 0.717482646105628,
+      "tp": 487603,
+      "fp": 305651,
+      "fn": 78348
+    },
+    "IVD": {
+      "precision": 0.9053257220690767,
+      "recall": 0.9653936882427299,
+      "f1": 0.9343953273501376,
+      "tp": 6641283,
+      "fp": 694511,
+      "fn": 238069
+    }
+  },
+  "overlapping_annotation_pixels_before_resize": 0,
+  "confusion_matrix": [
+    [
+      189667628,
+      1376423,
+      257069,
+      679238
+    ],
+    [
+      103461,
+      2878065,
+      32531,
+      986
+    ],
+    [
+      18056,
+      46005,
+      487603,
+      14287
+    ],
+    [
+      220601,
+      1417,
+      16051,
+      6641283
+    ]
+  ],
+  "confusion_matrix_note": "Rows=true class, columns=predicted class",
+  "model": "AlexNetUNet",
+  "checkpoint": "src/cnn_segmentation/models/checkpoints_4cls/alexnet_unet_best.pt",
+  "input_size": [
+    256,
+    256
+  ],
+  "class_names": [
+    "Background",
+    "PE",
+    "CC",
+    "IVD"
+  ]
+}
